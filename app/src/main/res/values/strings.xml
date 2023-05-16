@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ace</string>
+    <string name="enter_a_word_to_search">Enter a word to search</string>
+</resources>

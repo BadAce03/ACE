@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="Dictionary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#FF018786"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_a_word_to_search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/et_search"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="Search"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_search"
+        android:id="@+id/scroll_view"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF000000"
+            android:textSize="18sp"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
